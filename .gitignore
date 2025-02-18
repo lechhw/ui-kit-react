@@ -1,4 +1,4 @@
-# Logs
+# 로그
 logs
 *.log
 npm-debug.log*
@@ -8,13 +8,23 @@ pnpm-debug.log*
 lerna-debug.log*
 .npmrc
 
+# 패키지
+package-lock.json
 node_modules
 dist
 dist-ssr
 *.local
+@dist
+storybook-static
+.npmrc
 
-# Editor directories and files
-.vscode/*
+# 환경설정
+# gitlab서버 외에 절대 배포 금지
+.env
+.env.development
+.env.production
+
+# 폴더/파일
 !.vscode/extensions.json
 .idea
 .DS_Store
